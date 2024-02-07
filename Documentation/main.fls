@@ -1,8 +1,8 @@
-PWD /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation
+PWD /Users/lanar/Documents/Cooking-model/Documentation
 INPUT /usr/local/texlive/2022/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/main.tex
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/main.tex
 OUTPUT main.log
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/koma-script/scrartcl.cls
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/koma-script/scrartcl.cls
@@ -943,17 +943,17 @@ INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ectt1095.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecti1095.tfm
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/graph.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/graph.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/graph.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/graph.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/graph.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/graph.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/graph.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/graph.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/graph.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/graph.png
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ectt0800.tfm
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/graph_showing_time.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/graph_showing_time.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/graph_showing_time.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/graph_showing_time.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/graph_showing_time.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/graph_showing_time.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/graph_showing_time.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/graph_showing_time.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/graph_showing_time.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/graph_showing_time.png
 INPUT ./chapters/simulationresults.tex
 INPUT ./chapters/simulationresults.tex
 INPUT ./chapters/simulationresults.tex
@@ -962,48 +962,48 @@ INPUT ./chapters/simulationresults.tex
 INPUT ./chapters/simulationresults.tex
 INPUT chapters/simulationresults.tex
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/recipes_order.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/recipes_order.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/recipes_order.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/recipes_order.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/recipes_order.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/graph_duration.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/graph_duration.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/graph_duration.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/graph_duration.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/graph_duration.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/graph_duration1.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/graph_duration1.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/graph_duration1.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/graph_duration1.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/graph_duration1.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/optimal_durationG.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/optimal_durationG.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/optimal_durationG.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/optimal_durationG.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/optimal_durationG.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/optimal_durationS.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/optimal_durationS.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/optimal_durationS.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/optimal_durationS.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/optimal_durationS.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/graph_durationC.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/graph_durationC.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/graph_durationC.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/graph_durationC.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/graph_durationC.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/resources.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/resources.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/resources.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/resources.png
-INPUT /Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/resources.png
-INPUT ./chapters/conclusion.tex
-INPUT ./chapters/conclusion.tex
-INPUT ./chapters/conclusion.tex
-INPUT chapters/conclusion.tex
-INPUT ./chapters/conclusion.tex
-INPUT ./chapters/conclusion.tex
-INPUT chapters/conclusion.tex
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/recipes_order.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/recipes_order.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/recipes_order.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/recipes_order.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/recipes_order.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/graph_duration.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/graph_duration.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/graph_duration.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/graph_duration.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/graph_duration.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/graph_duration1.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/graph_duration1.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/graph_duration1.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/graph_duration1.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/graph_duration1.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/optimal_durationG.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/optimal_durationG.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/optimal_durationG.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/optimal_durationG.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/optimal_durationG.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/optimal_durationS.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/optimal_durationS.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/optimal_durationS.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/optimal_durationS.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/optimal_durationS.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/graph_durationC.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/graph_durationC.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/graph_durationC.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/graph_durationC.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/graph_durationC.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/resources.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/resources.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/resources.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/resources.png
+INPUT /Users/lanar/Documents/Cooking-model/Documentation/images/resources.png
+INPUT ./chapters/discusion.tex
+INPUT ./chapters/discusion.tex
+INPUT ./chapters/discusion.tex
+INPUT chapters/discusion.tex
+INPUT ./chapters/discusion.tex
+INPUT ./chapters/discusion.tex
+INPUT chapters/discusion.tex
 INPUT ./main.bbl
 INPUT main.bbl
 INPUT ./main.bbl

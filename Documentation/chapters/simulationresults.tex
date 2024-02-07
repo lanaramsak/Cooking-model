@@ -11,9 +11,9 @@ cooking potatoes, frying onions, cooking everything]
 \end{verbnobox}
 
 \begin{verbnobox}[\fontsize{10pt}{10pt}\selectfont]
-WORST ORDER: 223,
-[cutting onions, cutting meat, heating water, peeling potatoes, cooking meat,
- frying onions, cooking potatoes, cooking everything]
+WORST ORDER: 253,
+[cutting onions, cutting meat, heating water, cooking meat,
+ frying onions, peeling potatoes, cooking potatoes, cooking everything]
 \end{verbnobox}
 
 We can see that the difference in duration is 55 units of time, which is not small. 
@@ -21,7 +21,7 @@ This happens due to probalistic duration of time, but even without that, the dif
 which have to be done before cooking potatoes and cooking everything. If they are not done in the best order, the simulation has to wait for a task to be finished before doing anything new. 
 
 \begin{figure}[H]
-    \centerline{\includegraphics[scale=.4]{/Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/recipes_order.png}}
+    \centerline{\includegraphics[scale=.4]{/Users/lanar/Documents/Cooking-model/Documentation/images/recipes_order.png}}
     \caption{The best and worst order of tasks.}
     \label{fig3}
 \end{figure}
@@ -30,7 +30,7 @@ After seeing the difference an order of tasks can have, we were interested to se
 In the histogram below we can make out that most of the time the recipe is completed in between 179 to 184 units of time, this suggests the order was similar to the best order as seen above, with just some different permutations of the first few tasks.
 
 \begin{figure}[H]
-    \centerline{\includegraphics[scale=.5]{/Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/graph_duration.png}}
+    \centerline{\includegraphics[scale=.5]{/Users/lanar/Documents/Cooking-model/Documentation/images/graph_duration.png}}
     \caption{All possible durations of the recipe with two cooks, devided into groups by time interval 5 units.}
     \label{fig4}
 \end{figure}
@@ -39,14 +39,14 @@ We also did the same calculations for just one cook, but got a somewhat differen
 because when we ran the stohastic model, we only got one option of duration which is 251. This can be seen on the graph where most orders are between 243 to 248 units of time. 
 
 \begin{figure}[H]
-    \centerline{\includegraphics[scale=.5]{/Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/graph_duration1.png}}
+    \centerline{\includegraphics[scale=.5]{/Users/lanar/Documents/Cooking-model/Documentation/images/graph_duration1.png}}
     \caption{All possible durations of the recipe with one cook, devided into groups by time interval 5 units.}
     \label{fig5}
 \end{figure}
 
 \newpage
 \subsection{Recipe comparison to cook book}
-For our second dish we decided to do potato salad. We found a recipe in a cook book and adjusted it to our program. We wanted to test if the calculated optimal order matches the order in the cook book.
+For our second dish we decided to do potato salad. We found a recipe in a cook book and adjusted it to our program. We wanted to test if the calculated optimal order for one cook matches the order in the cook book.
 Here we can see the two orders:
 
 \begin{verbnobox}[\fontsize{10pt}{10pt}\selectfont]
@@ -76,13 +76,13 @@ These are the graphs we got.
     \centering
     \begin{minipage}{.5\textwidth}
       \centering
-      \includegraphics[width=.9\linewidth]{/Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/optimal_durationG.png}
+      \includegraphics[width=.9\linewidth]{/Users/lanar/Documents/Cooking-model/Documentation/images/optimal_durationG.png}
       \caption{Duration of recipe goulash with \\ different number of cooks}
       \label{fig6}
     \end{minipage}%
     \begin{minipage}{.5\textwidth}
       \centering
-      \includegraphics[width=.9\linewidth]{/Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/optimal_durationS.png}
+      \includegraphics[width=.9\linewidth]{/Users/lanar/Documents/Cooking-model/Documentation/images/optimal_durationS.png}
       \caption{Duration of recipe potato salad with different number of cooks.}
       \label{fig7}
     \end{minipage}
@@ -93,7 +93,7 @@ This is because the tasks in our recipes already have an order in which they hav
 To test our program we decided to make another recipe, where we tried to do it so, that a different number of cooks will have a bigger effect.
 
 \begin{figure}[H]
-    \centerline{\includegraphics[scale=.5]{/Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/graph_durationC.png}}
+    \centerline{\includegraphics[scale=.5]{/Users/lanar/Documents/Cooking-model/Documentation/images/graph_durationC.png}}
     \caption{Duration of recipe cake with different number of cooks.}
     \label{fig8}
 \end{figure}
@@ -102,6 +102,8 @@ These are the results we got with implementing the recipe of baking a cake. We w
 In this recipe you have to do a lot of tasks independantly and then there is just a few tasks that combine all of them. This way you can see a difference 
 between one, two and three cooks, but when it comes to four, the duration still remains the same. FUrthermore the difference was very small, only 6 time uhnits. This brings us to the conslusion that with every recipe 
 there will be a point where the number of cooks doesn't matter anymore. 
+
+%ADD GRAPH FOR POTATO SALAD, ONLY ONE OF EVERY RESOURCE
 
 Besides observing the effect of the number of cooks, we did the same for other resources. Here you can see the duration for making goulash when having:
 \begin{itemize}
@@ -113,7 +115,7 @@ Besides observing the effect of the number of cooks, we did the same for other r
 This is because in the optimal recipe two knives are never used at the same time, while the pan is used for cooking the meat and frying the onions which is done at the same time. 
 
 \begin{figure}[H]
-    \centerline{\includegraphics[scale=.4]{/Users/lanar/Downloads/Mod_and_Sim/Modeling and Simulation/images/resources.png}}
+    \centerline{\includegraphics[scale=.4]{/Users/lanar/Documents/Cooking-model/Documentation/images/resources.png}}
     \caption{Use of pan and knife in the optimal order of the recipe goulash.}
     \label{fig9}
 \end{figure}

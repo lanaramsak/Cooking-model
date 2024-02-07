@@ -9,5 +9,5 @@
 \contentsline {subsection}{\numberline {3.1}Effect of different ordering}{7}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Recipe comparison to cook book}{9}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Different number of resources}{9}{subsection.3.3}%
-\contentsline {section}{\numberline {4}Conclusion}{11}{section.4}%
+\contentsline {section}{\numberline {4}Discusion}{11}{section.4}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
