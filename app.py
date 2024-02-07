@@ -84,10 +84,10 @@ class DiscreteEventSimulator:
         #scheduling the end task event
 
         #no time randomness
-        self.schedule_end_task(self.time + duration, task_name)
+        #self.schedule_end_task(self.time + duration, task_name)
 
         #with random delays/done quicker
-        #self.schedule_end_task(self.time + time_randomness(duration), task_name)
+        self.schedule_end_task(self.time + time_randomness(duration), task_name)
 
     def schedule_end_task(self, event_time, task_name):
         event = {"time": event_time, "data": task_name}
@@ -105,12 +105,21 @@ class DiscreteEventSimulator:
         self.cooking.tasks_completed.append(task_name)
         self.find_task()
 
+    def check_resources(self):
+        all_resources = []
+        for task in self.cooking.alltasks:
+            all_resources += task["required_resources"] 
+        if list(set(all_resources)) != list(set(self.cooking.resources)):
+            raise ValueError("You don't have the right resources.")
+
+
 def run(permutations):
     #we go through all permutations and run the simulation for each of them,
     #then the final product is put in a list of pairs, sorted based on the first component (time)
     values = []
     for perm in permutations:
         simulator = DiscreteEventSimulator()
+        simulator.check_resources()
         poskus = list(perm)
         #poskus.reverse()
         simulator.cooking.tasks_list = poskus
@@ -120,7 +129,7 @@ def run(permutations):
 
             values.append(value)
     values.sort()
-    print(values)
+    print([value[0] for value in values])
 
     #the first one will have the shortest time, therefore the best order
     return values[0]
@@ -193,7 +202,6 @@ def time_randomness(duration):
 
     time_random = random.randrange(max( duration - TIME_CHANGE_FACTOR, 2), duration + TIME_CHANGE_FACTOR)
     return time_random
-
 
 #TODO - function that checks if we have all resources
 #run at the start of run
