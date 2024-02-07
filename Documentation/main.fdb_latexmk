@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex main"] 1707329101 "main.aux" "main.bbl" "main" 1707329399
+["bibtex main"] 1707329101 "main.aux" "main.bbl" "main" 1707334014
   "/usr/local/texlive/2022/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
   "References.bib" 0 -1 0 ""
-  "main.aux" 1707329398 8503 b7c5b700c24847dbb32b603ba45dd057 "pdflatex"
+  "main.aux" 1707334014 8503 b7c5b700c24847dbb32b603ba45dd057 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1707329395 "/Users/lanar/Documents/Cooking-model/Documentation/main.tex" "main.pdf" "main" 1707329399
+["pdflatex"] 1707334011 "/Users/lanar/Documents/Cooking-model/Documentation/main.tex" "main.pdf" "main" 1707334014
   "/Users/lanar/Documents/Cooking-model/Documentation/main.tex" 1707329098 3400 af7295723267fe982a2009bb2d1e419f ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -178,13 +178,13 @@
   "images/graph_showing_time.png" 1707072721 94828 2ec053abe447f6c8bac6cb4d0ae0f7bd ""
   "images/optimal_durationG.png" 1707243372 28964 766e920399b97362fb8352b71fad2d99 ""
   "images/optimal_durationS.png" 1707236273 28782 0cb5108d38434fc53fb797e9f34cdbe9 ""
-  "images/recipes_order.png" 1707323059 72364 1c23f444527afc33ef52038e529f3a93 ""
+  "images/recipes_order.png" 1707334010 72653 c2adc4963d182500768755025a09577b ""
   "images/resources.png" 1707259717 47589 a0d4f57fd340169cff27e95fd20259ce ""
-  "main.aux" 1707329398 8503 b7c5b700c24847dbb32b603ba45dd057 "pdflatex"
+  "main.aux" 1707334014 8503 b7c5b700c24847dbb32b603ba45dd057 "pdflatex"
   "main.bbl" 1707329101 49 0eba253fc001332e731e8aba3f23127b "bibtex main"
   "main.out" 0 -1 0 "pdflatex"
   "main.tex" 1707329098 3400 af7295723267fe982a2009bb2d1e419f ""
-  "main.toc" 1707329398 1004 3dd36c857ed1264f6df63e5e095171ef "pdflatex"
+  "main.toc" 1707334014 1004 3dd36c857ed1264f6df63e5e095171ef "pdflatex"
   (generated)
   "main.aux"
   "main.log"
