@@ -22,8 +22,19 @@
         ]
     },
     {
+      "name": "cutting herbs",
+      "duration": 28,
+      "required_task-prerequisites": [],
+      "required_resources": [
+        "strawberries", 
+        "cutting board",
+        "knife",
+        "cook"
+      ]
+  },
+    {
         "name": "cooking eggs",
-        "duration": 45,
+        "duration": 25,
         "required_task-prerequisites": [],
         "required_resources": [
           "egg", 
@@ -87,7 +98,7 @@
     },
     {
         "name": "cutting potatoes",
-        "duration": 40,
+        "duration": 30,
         "required_task-prerequisites": [
           "cooking potatoes", 
           "peeling potatoes"
@@ -122,7 +133,8 @@
         "cutting pickles", 
         "make dressing",
         "cutting potatoes",
-        "cooking eggs"
+        "cooking eggs",
+        "cutting herbs"
     ],
     "required_resources": [
         "bowl",

@@ -111,14 +111,16 @@ def run(permutations):
     values = []
     for perm in permutations:
         simulator = DiscreteEventSimulator()
-        simulator.cooking.tasks_list = list(perm)
+        poskus = list(perm)
+        #poskus.reverse()
+        simulator.cooking.tasks_list = poskus
         value = simulator.run_simulation()
 
         if value not in values:
 
             values.append(value)
     values.sort()
-    #print(sorted([value[0] for value in values]))
+    print(values)
 
     #the first one will have the shortest time, therefore the best order
     return values[0]
@@ -193,12 +195,16 @@ def time_randomness(duration):
     return time_random
 
 
+#TODO - function that checks if we have all resources
+#run at the start of run
+
+
 #Getting the best time and order, by trying all permutations
-#print(run(all_permutations(RECIPE)))
+print(run(all_permutations(RECIPE)))
 
 
 #Getting the best time and order, by not trying all permutations
-print(run(smart_permutations(RECIPE)))
+#print(run(smart_permutations(RECIPE)))
 
 
 #Used for testing the execution of one recipe, helps to uncomment the print functions in the code

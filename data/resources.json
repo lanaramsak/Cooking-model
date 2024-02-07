@@ -1,11 +1,11 @@
 [
   {
     "id": "cook",
-    "num": 2
+    "num": 1
   },
   {
     "id": "peeler",
-    "num": 4
+    "num": 2
   },
   {
     "id": "oven",
@@ -13,27 +13,27 @@
   },
   {
     "id": "scale",
-    "num": 4
+    "num": 3
   },
   {
     "id": "pot",
-    "num": 4
+    "num": 3
   },
   {
     "id": "pan",
-    "num": 4
+    "num": 3
   },
   {
     "id": "cutting board",
-    "num": 4
+    "num": 3
   },
   {
     "id": "bowl",
-    "num": 4
+    "num": 3
   },
   {
     "id": "knife",
-    "num": 1
+    "num": 3
   },
   {
     "id": "pickles",
