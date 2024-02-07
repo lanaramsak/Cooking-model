@@ -1,0 +1,98 @@
+\documentclass[a4paper,11pt]{scrartcl}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{fullpage}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{ifthen}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{cite}
+\usepackage{graphicx}
+\usepackage{verbatimbox}
+\usepackage{float}
+\usepackage{subcaption}
+
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\lstset{
+  language=Python,                  % the language of the code
+  basicstyle=\small,                % the size of the fonts that are used for the code
+  numbers=left,                     % where to put the line-numbers
+  numberstyle=\footnotesize,        % the style that is used for the line-numbers
+  stepnumber=2,                     % the step between two line-numbers. If it's 1, each line
+                                    % will be numbered
+  backgroundcolor=\color{white},    % choose the background color. You must add \usepackage{color}
+  showspaces=false,                 % show spaces adding particular underscores
+  showstringspaces=false,           % underline spaces within strings
+  showtabs=false,                   % show tabs within strings adding particular underscores
+  frame=single,                     % adds a frame around the code
+  rulecolor=\color{black},          % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. commens (green here))
+  tabsize=2,                        % sets default tabsize to 2 spaces
+  captionpos=b,                     % sets the caption-position to bottom
+  breaklines=true,                  % sets automatic line breaking
+  breakatwhitespace=false,          % sets if automatic breaks should only happen at whitespace
+  title=\lstname,                   % show the filename of files included with \lstinputlisting;
+                                    % also try caption instead of title
+  keywordstyle=\color{blue},        % keyword style
+  commentstyle=\color{dkgreen},     % comment style
+  stringstyle=\color{mauve},        % string literal style
+  escapeinside={\%*}{*},           % if you want to add LaTeX within your code
+  morekeywords={end,sortrows}       % if you want to add more keywords to the set
+}
+
+
+\begin{document}
+
+\subject{Modeling and Simulation}
+\title{Cooking Process Simulation}
+
+\publishers{Supervisor: Martin Bicher}
+\author{Klaus Derks, 01529340 - 066 926\footnote{\dots.}\\                 % Created the results for...
+Dávid Lukács, 12306344 - Curriculum Number\footnote{\dots}\\               % Collected the data...
+Martina Mlezivová, 12306360 - 033 266\footnote{\dots}\\ % Implemented...
+Lana Ramšak, 12302817 - 033 201\footnote{\dots}}        % Wrote introduction...
+
+\maketitle
+
+\section*{Abstract}
+
+Abstract comes here \dots
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\section{Introduction}
+
+%%%% here we'll include the chapters
+\input{chapters/introduction}
+
+\newpage
+
+\section{Model Implementation}
+\input{chapters/implementation}
+
+\newpage
+\section{Simulation Results}
+\input{chapters/simulationresults}
+
+\newpage
+\section{Conclusion}
+\input{chapters/conclusion}
+
+\newpage
+
+\bibliographystyle{plain}
+\bibliography{References}
+
+\end{document}

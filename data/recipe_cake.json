@@ -1,0 +1,175 @@
+[
+  {
+    "name": "heating oven",
+    "duration": 35,
+    "required_task-prerequisites": [],
+    "required_resources": [
+      "oven"
+    ]
+    },
+    {
+      "name": "seperate eggs",
+      "duration": 20,
+      "required_task-prerequisites": [],
+      "required_resources": [
+        "egg", 
+        "cook"
+      ]
+    },
+    {
+      "name": "beat egg whites",
+      "duration": 35,
+      "required_task-prerequisites": [
+        "seperate eggs"
+      ],
+      "required_resources": [
+        "cook", 
+        "bowl"
+      ]
+    },
+    {
+      "name": "mix egg yolks",
+      "duration": 30,
+      "required_task-prerequisites": [
+        "seperate eggs"
+      ],
+      "required_resources": [
+        "cook", 
+        "bowl"
+      ]
+    },
+    {
+      "name": "weigh flour",
+      "duration": 10,
+      "required_task-prerequisites": [
+      ],
+      "required_resources": [
+        "flour", 
+        "cook", 
+        "scale"
+      ]
+    },
+    {
+      "name": "weigh sugar",
+      "duration": 10,
+      "required_task-prerequisites": [
+      ],
+      "required_resources": [
+        "sugar", 
+        "cook", 
+        "scale"
+      ]
+    },
+    {
+      "name": "weigh almonds",
+      "duration": 10,
+      "required_task-prerequisites": [
+      ],
+      "required_resources": [
+        "almonds", 
+        "cook", 
+        "scale"
+      ]
+    },
+    {
+      "name": "mix dry ingrediends",
+      "duration": 30,
+      "required_task-prerequisites": [
+        "weigh almonds", 
+        "weigh flour",
+        "weigh sugar"
+      ],
+      "required_resources": [
+        "baking powder", 
+        "cook", 
+        "bowl"
+      ]
+    },
+    {
+      "name": "cut strawberries",
+      "duration": 20,
+      "required_task-prerequisites": [
+      ],
+      "required_resources": [
+        "strawberries", 
+        "cook", 
+        "cutting board",
+        "knife"
+      ]
+    },
+    {
+      "name": "cut chocolate",
+      "duration": 20,
+      "required_task-prerequisites": [
+      ],
+      "required_resources": [
+        "chocolate", 
+        "cook", 
+        "cutting board",
+        "knife"
+      ]
+    },
+    {
+      "name": "mix wet ingrediends",
+      "duration": 30,
+      "required_task-prerequisites": [
+        "seperate eggs",
+        "mix egg yolks",
+        "melt butter"
+      ],
+      "required_resources": [
+        "bowl",
+        "cook",
+        "milk"
+      ]
+    },
+    {
+      "name": "melt butter",
+      "duration": 30,
+      "required_task-prerequisites": [
+      ],
+      "required_resources": [
+        "butter", 
+        "cook", 
+        "pot"
+      ]
+    },
+    {
+      "name": "mix together",
+      "duration": 37,
+      "required_task-prerequisites": [
+        "seperate eggs",
+        "mix egg yolks",
+        "melt butter",
+        "mix wet ingrediends",
+        "mix dry ingrediends",
+        "weigh almonds", 
+        "weigh flour",
+        "weigh sugar"
+      ],
+      "required_resources": [
+        "bowl",
+        "cook",
+        "milk"
+      ]
+    },
+    {
+      "name": "bake",
+      "duration": 60,
+      "required_task-prerequisites": [
+        "seperate eggs",
+        "mix egg yolks",
+        "melt butter",
+        "mix wet ingrediends",
+        "mix dry ingrediends",
+        "weigh almonds", 
+        "weigh flour",
+        "weigh sugar",
+        "heating oven",
+        "mix together"
+      ],
+      "required_resources": [
+        "oven"
+      ]
+    }
+]

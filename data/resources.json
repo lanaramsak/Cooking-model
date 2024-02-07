@@ -1,0 +1,95 @@
+[
+  {
+    "id": "cook",
+    "num": 2
+  },
+  {
+    "id": "peeler",
+    "num": 4
+  },
+  {
+    "id": "oven",
+    "num": 1
+  },
+  {
+    "id": "scale",
+    "num": 4
+  },
+  {
+    "id": "pot",
+    "num": 4
+  },
+  {
+    "id": "pan",
+    "num": 4
+  },
+  {
+    "id": "cutting board",
+    "num": 4
+  },
+  {
+    "id": "bowl",
+    "num": 4
+  },
+  {
+    "id": "knife",
+    "num": 1
+  },
+  {
+    "id": "pickles",
+    "num": 1
+  },
+  {
+    "id": "mayonnaise",
+    "num": 1
+  }, 
+  {
+    "id": "egg",
+    "num": 1
+  },
+  {
+    "id": "onion",
+    "num": 1
+  },
+  {
+    "id": "flour",
+    "num": 1
+  },
+  {
+    "id": "sugar",
+    "num": 1
+  },
+  {
+    "id": "almonds",
+    "num": 1
+  },
+  {
+    "id": "baking powder",
+    "num": 1
+  },
+  {
+    "id": "strawberries",
+    "num": 1
+  },
+  {
+    "id": "chocolate",
+    "num": 1
+  },
+  {
+    "id": "milk",
+    "num": 1
+  },
+  {
+    "id": "butter",
+    "num": 1
+  },
+  {
+    "id": "meat",
+    "num": 1
+  },
+  {
+    "id": "potato",
+    "num": 1
+  }
+
+]

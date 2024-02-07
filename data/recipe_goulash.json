@@ -1,0 +1,96 @@
+[
+    {
+      "name": "cutting onions",
+      "duration": 30,
+      "required_task-prerequisites": [],
+      "required_resources": [
+        "onion", 
+        "cutting board",
+        "knife",
+        "cook"
+      ]
+    },
+    {
+      "name": "frying onions",
+      "duration": 30,
+      "required_task-prerequisites": [
+        "cutting onions"
+      ],
+      "required_resources": [
+        "cook", 
+        "pan"
+      ]
+    },
+    {
+      "name": "heating water",
+      "duration": 50,
+      "required_task-prerequisites": [
+
+      ],
+      "required_resources": [
+        "pot"
+      ]
+    },
+    {
+      "name": "cooking potatoes",
+      "duration": 60,
+      "required_task-prerequisites": [
+        "heating water",
+        "peeling potatoes"
+      ],
+      "required_resources": [
+        "potato",
+        "pot"
+      ]
+    },
+    {
+      "name": "peeling potatoes",
+      "duration": 60,
+      "required_task-prerequisites": [
+      ],
+      "required_resources": [
+        "peeler",
+        "cook"
+      ]
+    },
+    {
+        "name": "cutting meat",
+        "duration": 30,
+        "required_task-prerequisites": [
+        ],
+        "required_resources": [
+            "cook",
+            "meat",
+            "cutting board",
+            "knife"
+        ]
+    },
+    {
+        "name": "cooking meat",
+        "duration": 40,
+        "required_task-prerequisites": [
+            "cutting meat"
+        ],
+        "required_resources": [
+            "pan",
+            "cook"
+        ]
+    },
+    {
+    "name": "cooking everything",
+    "duration": 60,
+    "required_task-prerequisites": [
+        "cutting meat",
+        "peeling potatoes",
+        "cooking potatoes",
+        "frying onions",
+        "cutting onions",
+        "cooking meat",
+        "heating water"
+    ],
+    "required_resources": [
+        "pot",
+        "cook"
+    ]
+      }
+]
