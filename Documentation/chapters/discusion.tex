@@ -1,11 +1,11 @@
 
-Firstly, when we were introduced to the problematics of our project, our understanding of it did not match the supervisors.
-That is why our first model, done with Simpy, turned out to not be the best solution. In the program our recipe was executed in real time, but the model only
-did the tasks in the given order, where as the task given was to find the optimal order. We then decided to do 
-the whole thing again from the start, this time without SimPy and with a stronger emphasis on a discrete event model. 
+When we were first introduced to the problem, our understanding of it did not match the supervisors.
+That is why our first model, done with SimPy, turned out to not be the best solution. In the program our recipe was executed in real time, but the model only
+did the tasks in the given order, whereas the task given was to find the optimal order. We then decided to do 
+the whole project again from the start. This time without SimPy and with a stronger emphasis on a discrete event model. 
 
-Our current model works with three different recipes, goulash, potato salad and cake. Each of the recipes was done with a porpuse to further improve
-our model and test its abilities. We learned that there are recipes, where the order isn't that important, and therefore are not the best 
+Our current model works with three different recipes, goulash, potato salad and cake. Each of the recipes was done with a purpose to further improve
+our model and test its abilities. We learned that there are recipes, where the order is not that important, and therefore are not the best 
 to use in this case. One example is a fruit salad. But on the other side, having a recipe like making Wiener schnitzel, that already has a very strict order, regarding what tasks have 
 to be done before the other, is not the best option as well. \\
 
@@ -15,24 +15,24 @@ that will be quicker than the others. This depends on what kind of recipe you ha
 Lets starts with only having one cook. In this case there can be a difference in duration, but only if we have 
 tasks that can be done without the cook present. For example in the goulash recipe, if the cook peels the potatoes 
 more at the start, he does not have to wait for them to finish cooking and can instead do something in the mean time. 
-But if he does this task at the end, then he has to wait for them to cook before cooking everything. 
-If we compare this to the potato salad recipe, we can see that there is no difference in time. That is beacuse the only two tasks
+However if he does this task at the end, then he has to wait for them to cook before cooking everything. 
+If we compare this to the potato salad recipe, we can see that there we is no difference in time. That happens beacuse the only two tasks
 that can be done without the cook present can be done at the start, since there are no tasks required before. 
-The order of the remaining tasks then will then not change the duration. 
+The order of the remaining tasks will then not change the duration. 
 
 It is very similar when it comes to having two cooks. In the recipe goulash, the optimal order is to start with 
 peeling the potatoes, so that cooking them can be done in the background while the cooks are doing something else.   
-With the potato salad recipe there is only one possible order for our program to execute the recipe with two cooks. 
+We realized that in the potato salad recipe there is only one possible order for our program to execute the recipe with two cooks. 
 This is because all tasks regarding onions and potatoes take long, and have a specific order. We have to keep in mind that our model will 
 always, if possible, do the tasks that don't need the cook present. This eliminates a lot of possible 
 bad orders, that a person could do in real life. That is why it starts with cooking eggs and potatoes and will 
 never make the mistake of doing that later and having to wait. \\
 
 Does having more cooks alway pay off? That was one of the other questions we asked ourselves during the simulation testing. As seen
-in the results sectin above, having more cooks only affects the time to some extend. There normaly is a difference between having one or two, 
+in the results sectin above, having more cooks only affects the time to some extend. There usually is a difference between having one or two, 
 in our case the duration decreased by half. But when it came to three cooks, the difference was minor if there even was one. 
 We also have to take into account that even when having more cooks, you also need more pots, pans, knives... While running the same test for potato salad, 
-but only having one of every resources, the difference in quantity of cooks did not affect the duration. We also tried executing the recipe goulash
+having only one of every resources, the difference in quantity of cooks did not affect the duration. We also tried executing the recipe goulash
 with different number of kitchen utensils. There we observed that with one pan the duration changed but with only one knife it was the same as the optimal duration.
 This is because in the optimal order two pans were used at the same time, whereas the knives were never used simultaneously.  
 This brings us to the conclusion, that big kitchens, or factories, should only have more workers, if they can give them the tools to work with and know that 
@@ -41,10 +41,10 @@ This way the waiters would have to wait for the dishes to be done, and the durat
 
 Lastly we think our model could still be improved. We could add another parameter, 
 where you could say wheather you want this task done last before finishing, or if some task has to be done right after it.
-This was also visible in the comparison we did to the real recipe for potato salad. in the cook book's case 
+This was also visible in the comparison we did to the real recipe for potato salad. In the cook book's case 
 the dressing was done last, since it has to be fresh. But our simulation returned an order where it was done more at the start.
-Another thing that could make our model more realistic, would be to change the tasks that don't need the cook present. 
-While we simplified the process by stating that the cook isn't needed throughout the entire task, 
+Another thing that could make our model more realistic, would be to change the tasks that do not need the cook present. 
+While we simplified the process by stating that the cook is not needed throughout the entire task, 
 there are small tasks at the start and end that require the cook's attention and availability. For example cooking potatoes. 
-It is true that the cook does not have to be present while the potatoes are cooking, he still has to pot them in a pot and take them out at the end.
+It is true that the cook does not have to be present while the potatoes are cooking, but he still has to put them in a pot and take them out at the end.
 We beileve this could be done by deviding the task cooking potatoes in smaller tasks and adding a stricter ordering, as said before.
