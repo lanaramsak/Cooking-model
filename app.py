@@ -3,11 +3,13 @@ import random
 import itertools
 from collections import Counter
 
-RECIPE = "recipe_cake" 
+RECIPE = "recipe_goulash"
+#POSSIBLE RECIPES
 #"recipe_potato_salad"
 #"recipe_cake"
 #"recipe_goulash" 
-#recipe_goulash2 is without the required_task-prerequisites to test the different orders
+
+#The print comments are to be used when only running one recipe
 
 TIME_CHANGE_FACTOR = 5 #meaning a cook can either be quicker/take longer of the max of 10 seconds
 
@@ -58,7 +60,6 @@ class DiscreteEventSimulator:
             #to stop it in case something goes wrong
             if self.time == 1000:
                 break
-        #print(f"TIME: {self.time}")
         return (self.time, self.cooking.order)
 
     def find_task(self):
@@ -70,7 +71,8 @@ class DiscreteEventSimulator:
                 self.find_task()
     
     def start_task(self, task_name):
-        #rint(f"doing {task_name} ....")
+        #print(f"doing {task_name} ....")
+
         #we search for the task in the list of tasks, to be able to get the other data about it
         task = find(self.cooking.alltasks, task_name)
 
@@ -106,6 +108,7 @@ class DiscreteEventSimulator:
         self.find_task()
 
     def check_resources(self):
+        #we check wheather the user has all the needed resources
         all_resources = []
         for task in self.cooking.alltasks:
             all_resources += task["required_resources"]
@@ -129,12 +132,13 @@ def run(permutations):
 
             values.append(value)
     values.sort()
-    #print([value[0] for value in values])
 
     #the first one will have the shortest time, therefore the best order
     return values[0]
 
 def all_permutations(recipe):
+    #returns all possible permutations
+
     #getting the list of task to make different permutations
     with open(f'data/{recipe}.json') as f:
             alltasks = json.load(f)
@@ -142,6 +146,8 @@ def all_permutations(recipe):
     return list(itertools.permutations(alltasks))
 
 def smart_permutations(recipe):
+    #return only some permutations, optimized
+
     #getting the list of task
     with open(f'data/{recipe}.json') as f:
             alltasks = json.load(f)    
@@ -164,7 +170,7 @@ def smart_permutations(recipe):
         count_list = [ find(alltasks, x) for (x, y) in required_tasks_counted if y == i]
         permuted_group = list(itertools.permutations(count_list))
         seperate_lists.append(permuted_group)
-        seperate_lists.reverse() #reversed because range goes from 1 -> k which will be from one mentioned to more mentioned
+        seperate_lists.reverse() #reversed because range goes from 1 -> k which will be from one time mentioned to more mentioned
 
     #we need to get a list of all the tasks that we don't have in the required_tasks
     not_required_tasks = [task for task in alltasks if task["name"] not in required_task_names]
@@ -204,6 +210,7 @@ def time_randomness(duration):
     return time_random
 
 def tests_duration(num):
+    #used for tests, to get more results to then calculate average
     all_times = []
     for i in range(num):
         duration = run(smart_permutations(RECIPE))
@@ -217,12 +224,10 @@ def tests_duration(num):
 
 
 #Getting the best time and order, by not trying all permutations
-#print(run(smart_permutations(RECIPE)))
+print(run(smart_permutations(RECIPE)))
 
 
-#Used for testing the execution of one recipe, helps to uncomment the print functions in the code
+#Used for testing the execution of one recipe, recomendet to uncomment the print functions in the code
 #simulator = DiscreteEventSimulator()
 #value = simulator.run_simulation()
 #print(value)
-
-print(tests_duration(50))
