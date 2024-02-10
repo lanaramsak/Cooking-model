@@ -3,7 +3,7 @@ import random
 import itertools
 from collections import Counter
 
-RECIPE = "recipe_goulash" 
+RECIPE = "recipe_cake" 
 #"recipe_potato_salad"
 #"recipe_cake"
 #"recipe_goulash" 
@@ -108,9 +108,9 @@ class DiscreteEventSimulator:
     def check_resources(self):
         all_resources = []
         for task in self.cooking.alltasks:
-            all_resources += task["required_resources"] 
-        if list(set(all_resources)) != list(set(self.cooking.resources)):
-            raise ValueError("You don't have the right resources.")
+            all_resources += task["required_resources"]
+        if not set(all_resources).issubset(set(self.cooking.resources)):
+            raise ValueError("You do not have the right resources.")
 
 
 def run(permutations):
@@ -129,7 +129,7 @@ def run(permutations):
 
             values.append(value)
     values.sort()
-    print([value[0] for value in values])
+    #print([value[0] for value in values])
 
     #the first one will have the shortest time, therefore the best order
     return values[0]
@@ -203,12 +203,17 @@ def time_randomness(duration):
     time_random = random.randrange(max( duration - TIME_CHANGE_FACTOR, 2), duration + TIME_CHANGE_FACTOR)
     return time_random
 
-#TODO - function that checks if we have all resources
-#run at the start of run
+def tests_duration(num):
+    all_times = []
+    for i in range(num):
+        duration = run(smart_permutations(RECIPE))
+        print(i)
+        all_times.append(duration[0])
+    return all_times
 
 
 #Getting the best time and order, by trying all permutations
-print(run(all_permutations(RECIPE)))
+#print(run(all_permutations(RECIPE)))
 
 
 #Getting the best time and order, by not trying all permutations
@@ -220,3 +225,4 @@ print(run(all_permutations(RECIPE)))
 #value = simulator.run_simulation()
 #print(value)
 
+print(tests_duration(50))

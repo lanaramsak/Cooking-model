@@ -1,7 +1,8 @@
-For the simulation results we looked into a few different \textcolor{red}{things}.
+For the simulation results we looked into a few different problematic topics.
 
 \subsection{Effect of different ordering}
-We wanted to see how big of an impact has the order of the tasks. That is why we looked for the best order for the recipe for goulash, and the worst one. This means the one that is done the quickest and the one that takes the longest.
+We wanted to see how big of an impact has the order of the tasks. That is why we looked for the best order of the recipe for goulash, and the worst one. 
+Meaning the one that is done the quickest and the one that takes the longest.
 The following results are done with two cooks and time randomness.
 
 \begin{verbnobox}[\fontsize{10pt}{10pt}\selectfont]
@@ -16,8 +17,8 @@ WORST ORDER: 253,
  frying onions, peeling potatoes, cooking potatoes, cooking everything]
 \end{verbnobox}
 
-We can see that the difference in duration is 55 units of time, which is not small. 
-This happens due to probalistic duration of time, but even without that, the difference would still be 30 units. The reason for that is the order of the first few tasks, 
+We can notice that the difference in duration is 85 units of time, which is not small. 
+This happens due to probalistic duration of time. Even without that, the difference would still be 60 units. The reason for that is the order of the first few tasks, 
 which have to be done before cooking potatoes and cooking everything. If they are not done in the best order, the simulation has to wait for a task to be finished before doing anything new. 
 
 \begin{figure}[H]
@@ -27,26 +28,26 @@ which have to be done before cooking potatoes and cooking everything. If they ar
 \end{figure}
 
 After seeing the difference an order of tasks can have, we were interested to see what are all possible durations of the recipe and which are the most common. 
-In the histogram below we can make out that most of the time the recipe is completed in between 179 to 184 units of time, this suggests the order was similar to the best order as seen above, with just some different permutations of the first few tasks.
+In the histogram \ref{fig4} below we can make out that most of the time the recipe is completed in between 176 to 186 units of time.
 
 \begin{figure}[H]
     \centerline{\includegraphics[scale=.5]{/Users/lanar/Documents/Cooking-model/Documentation/images/graph_duration.png}}
-    \caption{All possible durations of the recipe with two cooks, devided into groups by time interval 5 units.}
+    \caption{All possible durations of the recipe with two cooks, devided into groups by time interval 10 units.}
     \label{fig4}
 \end{figure}
 
-We also did the same calculations for just one cook, but got a somewhat different distrubution, with most of the odrers gathered in the middle. In this case the different durations were only a result of probalistic time assignment, 
-because when we ran the stohastic model, we only got one option of duration which is 251. This can be seen on the graph where most orders are between 243 to 248 units of time. 
+We also did the same calculations for just one cook, but got a somewhat different distrubution, with most of the orders gathered in the middle, and there is not one interval that would significantly stand out. 
+Most orders of tasks were completed in 240 to 260 units of time. This corelates with the optimal time for one cook, which is 251 units of time.
 
 \begin{figure}[H]
     \centerline{\includegraphics[scale=.5]{/Users/lanar/Documents/Cooking-model/Documentation/images/graph_duration1.png}}
-    \caption{All possible durations of the recipe with one cook, devided into groups by time interval 5 units.}
+    \caption{All possible durations of the recipe with one cook, devided into groups by time interval 10 units.}
     \label{fig5}
 \end{figure}
 
 \newpage
 \subsection{Recipe comparison to cook book}
-For our second dish we decided to do potato salad. We found a recipe in a cook book and adjusted it to our program. We wanted to test if the calculated optimal order for one cook matches the order in the cook book.
+For our second dish we decided to do potato salad. We found a recipe in a cook book \cite[page 42]{book} and adjusted it to our program. We wanted to test if the calculated optimal order for one cook matches the order in the cook book.
 Here we can see the two orders:
 
 \begin{verbnobox}[\fontsize{10pt}{10pt}\selectfont]
@@ -64,55 +65,55 @@ Here we can see the two orders:
     - mixing enerything                         - mixing enerything
 \end{verbnobox}
 
-We can see that the two orders don not differ much. Some tasks are done in different order, but those are mainly interchangable. One different thing is when the dressing is done. 
-But this is because in real life you would want it to be freshly done before completing the salad, and our program does not take this into account. 
+We can spot that the two orders do not differ much. Some tasks are done in a different order, but those are mainly interchangable. One different thing is when the dressing is done. 
+This is because in real life you would want it to be freshly done before completing the salad. Unfortunately, our program does not take this into account. 
 
 \subsection{Different number of resources}
-Lastly we focused on the number of resources to see if it really has that big of an effect on duration. 
-We ran the program 5 times for each number of cooks and took the average of the optimal time. We gave the other resources a high enough quantity so that it won't effect the duration.
-These are the graphs we got.
+Lastly, we focused on the number of resources to see if it really has that big of an effect on duration. 
+We ran the program 200 times for each number of cooks and took the average of the optimal time. We gave the other resources a high enough quantity so that it will not affect the duration.
+These are the graphs we got for the recipe goulash \ref{fig6} and for potato salad \ref{fig7}.
 
 \begin{figure}[H]
     \centering
     \begin{minipage}{.5\textwidth}
       \centering
       \includegraphics[width=.9\linewidth]{/Users/lanar/Documents/Cooking-model/Documentation/images/optimal_durationG.png}
-      \caption{Duration of recipe goulash with \\ different number of cooks}
+      \caption{Duration of recipe goulash with \\ different number of cooks,\\ calculated average over 200 iterations.}
       \label{fig6}
     \end{minipage}%
     \begin{minipage}{.5\textwidth}
       \centering
       \includegraphics[width=.9\linewidth]{/Users/lanar/Documents/Cooking-model/Documentation/images/optimal_durationS.png}
-      \caption{Duration of recipe potato salad with different number of cooks.}
+      \caption{Duration of recipe potato salad with different number of cooks, calculated average over 200 iterations.}
       \label{fig7}
     \end{minipage}
 \end{figure}
 
-As you can see there is only a difference when using one or two cooks, after that you can use as many as you want, but the duration won't change. 
-This is because the tasks in our recipes already have an order in which they have to be done and even if you have another cook, he still has to wait for the other task to finish. 
-To test our program we decided to make another recipe, where we tried to do it so, that a different number of cooks will have a bigger effect.
+As you can see, there is only a difference between using one or two cooks. After that you can use as many as you want, but the duration will not change. 
+This happens because the tasks in our recipes already have an order in which they have to be done. Even if you have another cook, he still has to wait for the other task to finish. 
+To challenge our program we decided to make another recipe, where we tried to construct it so, that a different number of cooks will have a bigger effect.
 
 \begin{figure}[H]
     \centerline{\includegraphics[scale=.5]{/Users/lanar/Documents/Cooking-model/Documentation/images/graph_durationC.png}}
-    \caption{Duration of recipe cake with different number of cooks.}
+    \caption{Duration of recipe cake with different number of cooks, calculated average over 50 iterations.}
     \label{fig8}
 \end{figure}
 
-These are the results we got with implementing the recipe of baking a cake. We wanted to have more independant tasks and less strict prior ordering. 
-In this recipe you have to do a lot of tasks independantly and then there is just a few tasks that combine all of them. This way you can see a difference 
-between one, two and three cooks, but when it comes to four, the duration still remains the same. FUrthermore the difference was very small, only 6 time uhnits. This brings us to the conslusion that with every recipe 
-there will be a point where the number of cooks doesn't matter anymore. 
+These \ref{fig8} are the results we got with implementing the recipe of baking a cake. We wanted to have more independant tasks and less strict prior ordering. 
+In the recipe you have to do a lot of tasks independantly and just a few tasks that combine all of them. This way you can spot a difference 
+between one, two and three cooks. However, when it comes to four, the duration still remains the same. Furthermore the difference was very small, only 6 time units. This brings us to the conclusion that with every recipe 
+there will be a point where the number of cooks does not matter anymore. 
 
 %ADD GRAPH FOR POTATO SALAD, ONLY ONE OF EVERY RESOURCE
 
-Besides observing the effect of the number of cooks, we did the same for other resources. Here you can see the duration for making goulash when having:
+Besides observing the effect of the number of cooks, we did the same for other resources. Following you can see the duration for making goulash when having:
 \begin{itemize}
     \item double of everything: 181
     \item only one pan: 191
     \item only one knife: 181
 \end{itemize}
 
-This is because in the optimal recipe two knives are never used at the same time, while the pan is used for cooking the meat and frying the onions which is done at the same time. 
+This happens because, as you can see on figure \ref{fig9}, in the optimal recipe two knives are never used at the same time, while the pan is used for cooking the meat and frying the onions which is done at the same time. 
 
 \begin{figure}[H]
     \centerline{\includegraphics[scale=.4]{/Users/lanar/Documents/Cooking-model/Documentation/images/resources.png}}
